@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import openai from "../../../../openai"
 
-export async function postMessage(request: Request) {
+export async function POST(request: Request) {
     //todos in the body of the POST req
     const { todos } = await request.json()
     console.log(todos)
